@@ -17,6 +17,10 @@ coverage:
 lint:
 	pylint src/
 
+# Run security scan
+security:
+	bandit -r src/
+
 # Build Docker image
 build:
 	docker build -t hello-github-demo .
