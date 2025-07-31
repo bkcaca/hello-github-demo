@@ -13,6 +13,10 @@ test:
 coverage:
 	PYTHONPATH=. pytest --cov=src
 
+# Lint the code
+lint:
+	pylint src/
+
 # Build Docker image
 build:
 	docker build -t hello-github-demo .
